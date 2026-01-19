@@ -55,41 +55,24 @@
       </a>
       <ul class="list menu_right">
         <li>
-          <a href="index.html">Home</a>
+          <a href="{% url 'index' %}">Home</a>
         </li>
         <li>
-          <a href="about-us.html">About</a>
+          <a href="{% url 'aboutus' %}">About</a>
         </li>
         <li>
-          <a href="menu.html">Menu</a>
+          <a href="{% url 'menu' %}">Menu</a>
         </li>
         <li>
-          <a href="book-table.html">Book a table</a>
+          <a href="{% url 'contact' %}">Contact</a>
         </li>
         <li>
           <a href="#">Pages</a>
           <ul class="list">
             <li>
-              <a href="gallery.html">Gallery</a>
-            </li>
-            <li>
-              <a href="elements.html">Elements</a>
+              <a href="{% url 'gallery' %}">Gallery</a>
             </li>
           </ul>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-          <ul class="list">
-            <li>
-              <a href="blog.html">Blog</a>
-            </li>
-            <li>
-              <a href="single-blog.html">Blog Details</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
         </li>
       </ul>
       <ul class="list social">
@@ -105,12 +88,7 @@
         </li>
         <li>
           <a href="#">
-            <i class="fa fa-dribbble"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-behance"></i>
+            <i class="fa fa-instagram"></i>
           </a>
         </li>
       </ul>
@@ -123,7 +101,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand logo_h" href="index.html">
+            <a class="navbar-brand logo_h" href="{% url 'index' %}">
               <img src="{% static 'img/logo-2.png' %}" alt="" />
             </a>
             <button
@@ -146,16 +124,16 @@
             >
               <ul class="nav navbar-nav menu_nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="{% url 'index' %}">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about-us.html">About</a>
+                  <a class="nav-link" href="{% url 'aboutus' %}">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="menu.html">Menu</a>
+                  <a class="nav-link" href="{% url 'menu' %}">Menu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="book-table.html">Book a table</a>
+                  <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                 </li>
                 <li class="nav-item submenu dropdown">
                   <a
@@ -169,36 +147,9 @@
                   >
                   <ul class="dropdown-menu">
                     <li class="nav-item">
-                      <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="elements.html">Elements</a>
+                      <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
                     </li>
                   </ul>
-                </li>
-                <li class="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Blog</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="single-blog.html"
-                        >Blog Details</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
                 </li>
               </ul>
             </div>
@@ -769,17 +720,18 @@
         <div
           class="row footer-bottom d-flex justify-content-between align-items-center"
         >
-          <p class="col-lg-8 col-md-8 footer-text m-0">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | This template is made with
-            <i class="fa fa-heart-o" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
+          <div class="col-lg-8 col-md-8 footer-text">
+            <div class="single-footer-widget">
+              <h6 class="footer_title">Quick Links</h6>
+              <ul class="list">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                <li><a href="{% url 'menu' %}">Menu</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+              </ul>
+            </div>
+          </div>
           <div class="col-lg-3 col-md-6 col-md-4 footer-social">
             <a href="#">
               <i class="fa fa-facebook"></i>
@@ -788,10 +740,7 @@
               <i class="fa fa-twitter"></i>
             </a>
             <a href="#">
-              <i class="fa fa-dribbble"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-behance"></i>
+              <i class="fa fa-instagram"></i>
             </a>
           </div>
         </div>

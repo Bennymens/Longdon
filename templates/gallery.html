@@ -1,4 +1,5 @@
 <!doctype html>
+{% load static %}
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -7,25 +8,43 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-    <title>Gallery</title>
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png" />
+    <title>Longdon Gallery</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="vendors/linericon/style.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css"
     />
-    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
-    <link rel="stylesheet" href="vendors/animate-css/animate.css" />
-    <link rel="stylesheet" href="vendors/popup/magnific-popup.css" />
-    <link rel="stylesheet" href="vendors/swiper/css/swiper.min.css" />
-    <link rel="stylesheet" href="vendors/scroll/jquery.mCustomScrollbar.css" />
+    <link
+      rel="stylesheet"
+      href="{% static 'vendors/nice-select/css/nice-select.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'vendors/animate-css/animate.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'vendors/popup/magnific-popup.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'vendors/swiper/css/swiper.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'vendors/scroll/jquery.mCustomScrollbar.css' %}"
+    />
     <!-- main css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
   </head>
 
   <body>
@@ -35,9 +54,9 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand logo_h" href="index.html">
-              <img class="logo-1" src="img/logo.png" alt="" />
-              <img class="logo-2" src="img/logo-2.png" alt="" />
+            <a class="navbar-brand logo_h" href="{% url 'index' %}">
+              <img class="logo-1" src="{% static 'img/logo.png' %}" alt="" />
+              <img class="logo-2" src="{% static 'img/logo-2.png' %}" alt="" />
             </a>
             <button
               class="navbar-toggler"
@@ -59,16 +78,16 @@
             >
               <ul class="nav navbar-nav menu_nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="{% url 'index' %}">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about-us.html">About</a>
+                  <a class="nav-link" href="{% url 'aboutus' %}">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="menu.html">Menu</a>
+                  <a class="nav-link" href="{% url 'menu' %}">Menu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="book-table.html">book a table</a>
+                  <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                 </li>
                 <li class="nav-item submenu dropdown active">
                   <a
@@ -82,36 +101,10 @@
                   >
                   <ul class="dropdown-menu">
                     <li class="nav-item">
-                      <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="elements.html">Elements</a>
+                      <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Blog</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="single-blog.html"
-                        >Blog Details</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
                 </li>
               </ul>
             </div>
@@ -126,10 +119,10 @@
       <div class="banner_inner d-flex align-items-center">
         <div class="container">
           <div class="banner_content text-center">
-            <h1>Gallery</h1>
+            <h1>Longdon Gallery</h1>
             <div class="page_link">
-              <a href="index.html">Home</a>
-              <a href="gallery.html">Gallery</a>
+              <a href="{% url 'index' %}">Home</a>
+              <a href="{% url 'gallery' %}">Gallery</a>
             </div>
           </div>
         </div>
@@ -150,7 +143,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="main_title position-relative">
-              <h1>foodbar galleries</h1>
+              <h1>Longdon Plantain Chips Gallery</h1>
               <hr />
               <div class="round-planet planet">
                 <div class="round-planet planet2">
@@ -162,17 +155,15 @@
           </div>
         </div>
 
-        <div class="row" id="lightgallery">
-          <div
-            class="col-lg-4 col-md-6 all-image"
-            data-src="{% static 'img/gallery/Chips1.jpeg' %}"
-          >
+        <div class="gallery_slider owl-carousel">
+          <div class="item">
             <div class="single-gallery">
               <div class="overlay"></div>
               <img
                 class="img-fluid w-100"
                 src="{% static 'img/gallery/Chips1.jpeg' %}"
                 alt="Premium Plantain Chips"
+                style="height: 300px; object-fit: cover"
               />
               <div class="content">
                 <i class="lnr lnr-picture"></i>
@@ -180,16 +171,14 @@
             </div>
           </div>
 
-          <div
-            class="col-lg-4 col-md-6 all-image"
-            data-src="{% static 'img/gallery/Chips2.jpeg' %}"
-          >
+          <div class="item">
             <div class="single-gallery">
               <div class="overlay"></div>
               <img
                 class="img-fluid w-100"
                 src="{% static 'img/gallery/Chips2.jpeg' %}"
                 alt="Crispy Plantain Snacks"
+                style="height: 300px; object-fit: cover"
               />
               <div class="content">
                 <i class="lnr lnr-picture"></i>
@@ -197,16 +186,14 @@
             </div>
           </div>
 
-          <div
-            class="col-lg-4 col-md-6 all-image"
-            data-src="{% static 'img/gallery/Chips4.jpeg' %}"
-          >
+          <div class="item">
             <div class="single-gallery">
               <div class="overlay"></div>
               <img
                 class="img-fluid w-100"
                 src="{% static 'img/gallery/Chips4.jpeg' %}"
                 alt="Healthy Plantain Treats"
+                style="height: 300px; object-fit: cover"
               />
               <div class="content">
                 <i class="lnr lnr-picture"></i>
@@ -214,16 +201,14 @@
             </div>
           </div>
 
-          <div
-            class="col-lg-4 col-md-6 all-image"
-            data-src="{% static 'img/gallery/Chips5.jpeg' %}"
-          >
+          <div class="item">
             <div class="single-gallery">
               <div class="overlay"></div>
               <img
                 class="img-fluid w-100"
                 src="{% static 'img/gallery/Chips5.jpeg' %}"
                 alt="Authentic Plantain Chips"
+                style="height: 300px; object-fit: cover"
               />
               <div class="content">
                 <i class="lnr lnr-picture"></i>
@@ -231,16 +216,14 @@
             </div>
           </div>
 
-          <div
-            class="col-lg-4 col-md-6 all-image"
-            data-src="{% static 'img/gallery/Chips7.jpeg' %}"
-          >
+          <div class="item">
             <div class="single-gallery">
               <div class="overlay"></div>
               <img
                 class="img-fluid w-100"
                 src="{% static 'img/gallery/Chips7.jpeg' %}"
                 alt="Longdon Quality Chips"
+                style="height: 300px; object-fit: cover"
               />
               <div class="content">
                 <i class="lnr lnr-picture"></i>
@@ -248,16 +231,14 @@
             </div>
           </div>
 
-          <div
-            class="col-lg-4 col-md-6 all-image"
-            data-src="{% static 'img/gallery/Chips8.jpeg' %}"
-          >
+          <div class="item">
             <div class="single-gallery">
               <div class="overlay"></div>
               <img
                 class="img-fluid w-100"
                 src="{% static 'img/gallery/Chips8.jpeg' %}"
                 alt="Premium Plantain Selection"
+                style="height: 300px; object-fit: cover"
               />
               <div class="content">
                 <i class="lnr lnr-picture"></i>
@@ -384,17 +365,18 @@
         <div
           class="row footer-bottom d-flex justify-content-between align-items-center"
         >
-          <p class="col-lg-8 col-md-8 footer-text m-0">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | This template is made with
-            <i class="fa fa-heart-o" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
+          <div class="col-lg-8 col-md-8 footer-text">
+            <div class="single-footer-widget">
+              <h6 class="footer_title">Quick Links</h6>
+              <ul class="list">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                <li><a href="{% url 'menu' %}">Menu</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+              </ul>
+            </div>
+          </div>
           <div class="col-lg-3 col-md-6 col-md-4 footer-social">
             <a href="#">
               <i class="fa fa-facebook"></i>
@@ -403,10 +385,7 @@
               <i class="fa fa-twitter"></i>
             </a>
             <a href="#">
-              <i class="fa fa-dribbble"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-behance"></i>
+              <i class="fa fa-instagram"></i>
             </a>
           </div>
         </div>
@@ -416,22 +395,51 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="js/jquery.lightbox.js"></script>
-    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="vendors/isotope/isotope-min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-    <script src="vendors/counter-up/jquery.counterup.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendors/swiper/js/swiper.min.js"></script>
-    <script src="vendors/scroll/jquery.mCustomScrollbar.js"></script>
-    <script src="js/theme.js"></script>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/stellar.js' %}"></script>
+    <script src="{% static 'js/jquery.lightbox.js' %}"></script>
+    <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+    <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'vendors/counter-up/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'vendors/counter-up/jquery.counterup.js' %}"></script>
+    <script src="{% static 'js/mail-script.js' %}"></script>
+    <script src="{% static 'vendors/popup/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'vendors/swiper/js/swiper.min.js' %}"></script>
+    <script src="{% static 'vendors/scroll/jquery.mCustomScrollbar.js' %}"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
+    <script>
+      $(document).ready(function () {
+        $(".gallery_slider").owlCarousel({
+          loop: true,
+          margin: 30,
+          items: 3,
+          nav: true,
+          navText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>',
+          ],
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+            992: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
