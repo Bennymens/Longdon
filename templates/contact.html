@@ -221,7 +221,7 @@
     <footer class="footer-area p_120">
       <div class="container">
         <div class="row">
-          <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="single-footer-widget tp_widgets">
               <h6 class="footer_title">Top Products</h6>
               <ul class="list">
@@ -232,40 +232,19 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="single-footer-widget tp_widgets">
               <h6 class="footer_title">Quick Links</h6>
               <ul class="list">
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Brand Assets</a></li>
-                <li><a href="#">Investor Relations</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                <li><a href="{% url 'menu' %}">Menu</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 col-sm-6">
-            <div class="single-footer-widget tp_widgets">
-              <h6 class="footer_title">Features</h6>
-              <ul class="list">
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Brand Assets</a></li>
-                <li><a href="#">Investor Relations</a></li>
-                <li><a href="#">Terms of Service</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 col-sm-6">
-            <div class="single-footer-widget tp_widgets">
-              <h6 class="footer_title">Resources</h6>
-              <ul class="list">
-                <li><a href="#">Guides</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Experts</a></li>
-                <li><a href="#">Agencies</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="col-lg-6 col-md-6 col-sm-6">
             <aside class="f_widget news_widget">
               <div class="f_title">
                 <h3 class="footer_title">Newsletter</h3>
@@ -300,18 +279,6 @@
         <div
           class="row footer-bottom d-flex justify-content-between align-items-center"
         >
-          <div class="col-lg-8 col-md-8 footer-text">
-            <div class="single-footer-widget">
-              <h6 class="footer_title">Quick Links</h6>
-              <ul class="list">
-                <li><a href="{% url 'index' %}">Home</a></li>
-                <li><a href="{% url 'aboutus' %}">About Us</a></li>
-                <li><a href="{% url 'menu' %}">Menu</a></li>
-                <li><a href="{% url 'gallery' %}">Gallery</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
-              </ul>
-            </div>
-          </div>
           <div class="col-lg-3 col-md-6 col-md-4 footer-social">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
