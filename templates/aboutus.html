@@ -133,15 +133,21 @@
               <h2>About Our Story</h2>
               <hr />
               <p>
-                Who are in extremely love with eco friendly system. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
+                At Longdons, we believe snacking should be simple, flavorful,
+                and made from ingredients you can trust. Our plantain chips are
+                crafted from carefully selected ripe and unripe plantains,
+                thinly sliced and lightly seasoned to deliver a crisp bite and
+                an unforgettable taste. Inspired by the rich culinary heritage
+                of West Africa, Longdons celebrates culture through quality
+                snacks. We are committed to freshness, sustainability, and
+                authentic flavor — using plantains sourced from local farmers
+                and a production process that preserves both nutrients and
+                taste.
               </p>
               <p>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi aliquip consequat.
+                Whether you’re craving a savory crunch or a sweet golden treat,
+                Longdons offers plantain chips that are wholesome, delicious,
+                and proudly made for snack lovers everywhere.
               </p>
               <a class="main_btn" href="#">View Full Menu</a>
             </div>
@@ -150,7 +156,7 @@
             <div class="story_img">
               <img
                 class="img-fluid"
-                src="{% static 'img/story/story-1.jpg' %}"
+                src="{% static 'img/gallery/Chips4.jpeg' %}"
                 alt=""
               />
             </div>
@@ -233,7 +239,7 @@
     <footer class="footer-area p_120">
       <div class="container">
         <div class="row">
-          <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="single-footer-widget tp_widgets">
               <h6 class="footer_title">Top Products</h6>
               <ul class="list">
@@ -244,40 +250,19 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="single-footer-widget tp_widgets">
               <h6 class="footer_title">Quick Links</h6>
               <ul class="list">
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Brand Assets</a></li>
-                <li><a href="#">Investor Relations</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                <li><a href="{% url 'menu' %}">Menu</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 col-sm-6">
-            <div class="single-footer-widget tp_widgets">
-              <h6 class="footer_title">Features</h6>
-              <ul class="list">
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Brand Assets</a></li>
-                <li><a href="#">Investor Relations</a></li>
-                <li><a href="#">Terms of Service</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 col-sm-6">
-            <div class="single-footer-widget tp_widgets">
-              <h6 class="footer_title">Resources</h6>
-              <ul class="list">
-                <li><a href="#">Guides</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Experts</a></li>
-                <li><a href="#">Agencies</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="col-lg-6 col-md-6 col-sm-6">
             <aside class="f_widget news_widget">
               <div class="f_title">
                 <h3 class="footer_title">Newsletter</h3>
@@ -312,22 +297,20 @@
         <div
           class="row footer-bottom d-flex justify-content-between align-items-center"
         >
-          <div class="col-lg-8 col-md-8 footer-text">
-            <div class="single-footer-widget">
-              <h6 class="footer_title">Quick Links</h6>
-              <ul class="list">
-                <li><a href="{% url 'index' %}">Home</a></li>
-                <li><a href="{% url 'aboutus' %}">About Us</a></li>
-                <li><a href="{% url 'menu' %}">Menu</a></li>
-                <li><a href="{% url 'gallery' %}">Gallery</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
-              </ul>
-            </div>
-          </div>
           <div class="col-lg-3 col-md-6 col-md-4 footer-social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/longdonfoods?igsh=b3Zvc2t1cnZ2NjN0"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa fa-instagram"></i>
+            </a>
           </div>
         </div>
       </div>

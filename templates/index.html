@@ -179,7 +179,7 @@
             <div class="banner_left d-flex justify-content-center flex-column">
               <h1>delicious Chips</h1>
               <p>Crafted From Plantains. Perfected For You</p>
-              <a class="main_btn" href="#">check our menu</a>
+              <a class="main_btn" href="{% url 'menu' %}">check our menu</a>
             </div>
           </div>
           <div class="col-lg-6">
@@ -216,7 +216,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="main_title position-relative">
-              <h1>Our Top Rated Dishes</h1>
+              <h1>Our Top Rated Snacks</h1>
               <hr />
               <div class="round-planet planet">
                 <div class="round-planet planet2">
@@ -232,12 +232,12 @@
             <div class="thumb">
               <img
                 class="img-fluid"
-                src="{% static 'img/dish/d1.jpg' %}"
+                src="{% static '/img/gallery/Chips2.jpeg' %}"
                 alt=""
               />
             </div>
-            <h4>Bread Fruit Cheese Sandwich</h4>
-            <p>Bread/Potato/Cheese</p>
+            <h4>Mild coated peanuts</h4>
+            <p>groundnuts</p>
             <h5 class="price">$5.59</h5>
           </div>
 
@@ -245,13 +245,13 @@
             <div class="thumb">
               <img
                 class="img-fluid"
-                src="{% static 'img/dish/d2.jpg' %}"
+                src="{% static '/img/gallery/Chips5.jpeg' %}"
                 alt=""
               />
             </div>
-            <h4>Beef Cutlet with Spring Onion</h4>
-            <p>Bread/Potato/Cheese</p>
-            <h5 class="price">$5.59</h5>
+            <h4>Sweet plantain chips</h4>
+            <p>Plantains</p>
+            <h5 class="price">Ghc35</h5>
           </div>
 
           <div class="single_dish col-lg-3 col-md-6 col-md-6 text-center">
@@ -262,9 +262,9 @@
                 alt=""
               />
             </div>
-            <h4>Meat with sauce & Vegetables</h4>
-            <p>Bread/Potato/Cheese</p>
-            <h5 class="price">$5.59</h5>
+            <h4>Salted plantain chips</h4>
+            <p>Plantains</p>
+            <h5 class="price">Ghc35</h5>
           </div>
         </div>
       </div>
@@ -277,7 +277,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="main_title position-relative">
-              <h1>Our favourite Menu</h1>
+              <h1>Our Menu</h1>
               <hr />
               <div class="round-planet planet">
                 <div class="round-planet planet2">
@@ -294,24 +294,24 @@
               <ul class="list">
                 <li>
                   <h4>
-                    Wonton with french fries
+                    Mild Coated Peanuts
                     <span>$5.00</span>
                   </h4>
-                  <p>Wonthon/Potato/Fries/Sauce</p>
+                  <p>Peanuts/coating</p>
                 </li>
                 <li>
                   <h4>
-                    Roasted Red Potatoes with Rosemary
+                    Spicy Coated Peanuts
                     <span>$5.00</span>
                   </h4>
-                  <p>Wonthon/Potato/Fries/Sauce</p>
+                  <p>Peanuts/coating</p>
                 </li>
                 <li>
                   <h4>
-                    Bacon-Wrapped Shrimp with Garlic
+                    Sweet Plantain Chips
                     <span>$5.00</span>
                   </h4>
-                  <p>Wonthon/Potato/Fries/Sauce</p>
+                  <p>Plantain</p>
                 </li>
                 <li>
                   <h4>
@@ -409,9 +409,9 @@
           </div>
         </div>
 
-        <div class="row" id="lightgallery">
+        <div class="home-gallery-slider owl-carousel" id="lightgallery">
           <div
-            class="col-lg-7 all-image"
+            class="item gallery-item"
             data-src="{% static 'img/gallery/Chips1.jpeg' %}"
           >
             <div class="single-gallery">
@@ -421,14 +421,12 @@
                 src="{% static 'img/gallery/Chips1.jpeg' %}"
                 alt=""
               />
-              <div class="content">
-                <i class="lnr lnr-picture"></i>
-              </div>
+              <div class="content"><i class="lnr lnr-picture"></i></div>
             </div>
           </div>
 
           <div
-            class="col-lg-3 col-md-6 all-image"
+            class="item gallery-item"
             data-src="{% static 'img/gallery/Chips2.jpeg' %}"
           >
             <div class="single-gallery">
@@ -438,14 +436,12 @@
                 src="{% static 'img/gallery/Chips2.jpeg' %}"
                 alt=""
               />
-              <div class="content">
-                <i class="lnr lnr-picture"></i>
-              </div>
+              <div class="content"><i class="lnr lnr-picture"></i></div>
             </div>
           </div>
 
           <div
-            class="col-lg-3 col-md-6 all-image"
+            class="item gallery-item"
             data-src="{% static 'img/gallery/Chips3.jpeg' %}"
           >
             <div class="single-gallery">
@@ -455,14 +451,12 @@
                 src="{% static 'img/gallery/Chips3.jpeg' %}"
                 alt=""
               />
-              <div class="content">
-                <i class="lnr lnr-picture"></i>
-              </div>
+              <div class="content"><i class="lnr lnr-picture"></i></div>
             </div>
           </div>
 
           <div
-            class="col-lg-3 col-md-6 all-image"
+            class="item gallery-item"
             data-src="{% static 'img/gallery/Chips4.jpeg' %}"
           >
             <div class="single-gallery">
@@ -472,14 +466,12 @@
                 src="{% static 'img/gallery/Chips4.jpeg' %}"
                 alt=""
               />
-              <div class="content">
-                <i class="lnr lnr-picture"></i>
-              </div>
+              <div class="content"><i class="lnr lnr-picture"></i></div>
             </div>
           </div>
 
           <div
-            class="col-lg-3 col-md-6 all-image"
+            class="item gallery-item"
             data-src="{% static 'img/gallery/Chips5.jpeg' %}"
           >
             <div class="single-gallery">
@@ -489,14 +481,12 @@
                 src="{% static 'img/gallery/Chips5.jpeg' %}"
                 alt=""
               />
-              <div class="content">
-                <i class="lnr lnr-picture"></i>
-              </div>
+              <div class="content"><i class="lnr lnr-picture"></i></div>
             </div>
           </div>
 
           <div
-            class="col-lg-3 col-md-6 all-image"
+            class="item gallery-item"
             data-src="{% static 'img/gallery/Chips6.jpeg' %}"
           >
             <div class="single-gallery">
@@ -506,14 +496,12 @@
                 src="{% static 'img/gallery/Chips6.jpeg' %}"
                 alt=""
               />
-              <div class="content">
-                <i class="lnr lnr-picture"></i>
-              </div>
+              <div class="content"><i class="lnr lnr-picture"></i></div>
             </div>
           </div>
 
           <div
-            class="col-lg-7 all-image"
+            class="item gallery-item"
             data-src="{% static 'img/gallery/Chips7.jpeg' %}"
           >
             <div class="single-gallery">
@@ -523,9 +511,7 @@
                 src="{% static 'img/gallery/Chips7.jpeg' %}"
                 alt=""
               />
-              <div class="content">
-                <i class="lnr lnr-picture"></i>
-              </div>
+              <div class="content"><i class="lnr lnr-picture"></i></div>
             </div>
           </div>
         </div>
@@ -670,7 +656,12 @@
           <div class="col-lg-3 col-md-6 col-md-4 footer-social">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a
+              href="https://www.instagram.com/longdonfoods?igsh=b3Zvc2t1cnZ2NjN0"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -695,6 +686,32 @@
     <script src="{% static 'vendors/popup/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'vendors/swiper/js/swiper.min.js' %}"></script>
     <script src="{% static 'vendors/scroll/jquery.mCustomScrollbar.js' %}"></script>
+    <script>
+      $(document).ready(function () {
+        $(".home-gallery-slider").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: true,
+          navText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>',
+          ],
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          responsive: {
+            0: { items: 1 },
+            576: { items: 2 },
+            992: { items: 3 },
+          },
+        });
+
+        // initialize lightGallery on the carousel container
+        if ($.fn.lightGallery) {
+          $("#lightgallery").lightGallery({ selector: ".gallery-item" });
+        }
+      });
+    </script>
     <script src="{% static 'js/theme.js' %}"></script>
   </body>
 </html>
