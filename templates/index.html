@@ -8,8 +8,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png" />
-    <title>Food Bar</title>
+    <link rel="icon" href="{% static 'img/Favicon.png' %}" type="image/png" />
+    <title>Longdon foods</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
     <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}" />
@@ -45,13 +45,24 @@
     <!-- main css -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <style>
+      @media (min-width: 992px) {
+        .side_menu .menu_right a {
+          font-size: 18px !important;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <!--================Offcanvus Menu Area =================-->
     <div class="side_menu">
       <a class="logo" href="#">
-        <img src="{% static 'img/logo.png' %}" alt="" />
+        <img
+          src="{% static 'img/lomgdon_foods_logo_2-removebg-preview.png' %}"
+          alt="Longdon Foods"
+          style="max-width: 120px; height: auto"
+        />
       </a>
       <ul class="list menu_right">
         <li>
@@ -102,7 +113,11 @@
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <a class="navbar-brand logo_h" href="{% url 'index' %}">
-              <img src="{% static 'img/logo-2.png' %}" alt="" />
+              <img
+                src="{% static 'img/lomgdon_foods_logo_2-removebg-preview.png' %}"
+                alt="Longdon Foods"
+                style="max-width: 120px; height: auto"
+              />
             </a>
             <button
               class="navbar-toggler"
@@ -204,7 +219,7 @@
       </div>
       <img
         class="face-img img-fluid"
-        src="{% static 'img/banner/home-banner.png' %}"
+        src="{% static 'img/banner/Home.png' %}"
         alt=""
       />
     </section>
